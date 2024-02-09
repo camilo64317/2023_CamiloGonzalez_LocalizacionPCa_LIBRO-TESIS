@@ -1,0 +1,297 @@
+\chapter{DISEÑO EXPERIMENTAL} %detalles de como usted armó su experimento
+
+% --> del conjunta datos tomamos los que XXX condicion...
+
+% --> redimensionados a XX tamano para introducirlos en la red...
+
+% train val test split, cuantos casos o imagenes dejo en cada split [se fue precavido dejando del mismo en el mismo split]...
+
+% learning... hyperparametros... numero de boxes... augmentation...
+
+%----- si ud dice que hizo estas configuraciones: es porque usted luego en resultados va a mostrar o analizar esas configuraciones...
+
+
+% se probó con diferentes secuencias ADC sola, DWI .. ADC+DWI, ...
+
+% Se hizo con y sin segmentación...
+
+% El tamaño de la glandula...
+
+% \\begin{document}
+
+
+
+% \begin{table}[h]
+% \centering
+% \captionsetup{justification=centering}
+% \begin{tabular}{cccccc}
+% \toprule
+% \textbf{Secuencia} & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095} \\
+% \midrule
+% T2W & 0.452 & 0.258 & 0.255 & 0.0858 \\
+% ADC & 0.68 & 0.516 & 0.538 & 0.197 \\
+% DWI & 0.671 & 0.498 & 0.49 & 0.171 \\
+% T2W-ADC-DWI & 0.746 & 0.535 & 0.588 & 0.228 \\
+% \bottomrule
+% \end{tabular}
+% \caption{Comparativa de la utilización de diferentes secuencias, sin Fine Tunning}
+% \label{tabla:ejemplo}
+% \end{table}
+
+
+% \begin{table}[h]
+% \centering
+% \captionsetup{justification=centering}
+% \begin{tabular}{cccccc}
+% \toprule
+% \textbf{Secuencia} & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095} \\
+% \midrule
+% T2W & - & - & - & - \\
+% ADC & 0.672 & 0.479 & 0.523 & 0.22 \\
+% DWI & - & - & - & - \\
+% T2W-ADC-DWI & - & - & - & - \\
+% \bottomrule
+% \end{tabular}
+% \caption{Comparativa de la utilización de diferentes secuencias, Fine Tunning(Básico)}
+% \label{tabla:ejemplo}
+% \end{table}
+
+
+
+% \begin{table}[h]
+% \centering
+% \captionsetup{justification=centering}
+% \begin{tabular}{ccccccccccc}
+% \toprule
+% \textbf{Secuencia} & \multicolumn{4}{c}{\textbf{Sin Fine Tunning}} & \multicolumn{4}{c}{\textbf{Fine Tunning (Básico)}} & \multicolumn{2}{c}{\textbf{Cohorte de Prueba}} \\
+%  & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095} & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095} & \textbf{Precisión} & \textbf{Recall} \\
+% \midrule
+% T2W & 0.452 & 0.258 & 0.255 & 0.0858 & - & - & - & - & - & - \\
+% ADC & 0.68 & 0.516 & 0.538 & 0.197 & 0.672 & 0.479 & 0.523 & 0.22 & - & - \\
+% DWI & 0.671 & 0.498 & 0.49 & 0.171 & - & - & - & - & - & - \\
+% T2W-ADC-DWI & 0.746 & 0.535 & 0.588 & 0.228 & - & - & - & - & - & - \\
+% \bottomrule
+% \end{tabular}
+% \caption{Comparativa de la utilización de diferentes secuencias}
+% \label{tabla:ejemplo}
+% \end{table}
+
+
+
+% \begin{table}[h]
+% \centering
+% \captionsetup{justification=centering}
+% \begin{tabular}{cccccc}
+% \toprule
+% \textbf{Secuencia} & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095} & \textbf{Tipo de Prueba} \\
+% \midrule
+% T2W & 0.452 & 0.258 & 0.255 & 0.0858 & Sin Fine Tunning \\
+% ADC & 0.68 & 0.516 & 0.538 & 0.197 & Sin Fine Tunning \\
+% DWI & 0.671 & 0.498 & 0.49 & 0.171 & Sin Fine Tunning \\
+% T2W-ADC-DWI & 0.746 & 0.535 & 0.588 & 0.228 & Sin Fine Tunning \\
+% T2W & - & - & - & - & Fine Tunning (Básico) \\
+% ADC & 0.672 & 0.479 & 0.523 & 0.22 & Fine Tunning (Básico) \\
+% DWI & - & - & - & - & Fine Tunning (Básico) \\
+% T2W-ADC-DWI & - & - & - & - & Fine Tunning (Básico) \\
+% T2W & - & - & - & - & Cohorte de Prueba \\
+% ADC & - & - & - & - & Cohorte de Prueba \\
+% DWI & - & - & - & - & Cohorte de Prueba \\
+% T2W-ADC-DWI & - & - & - & - & Cohorte de Prueba \\
+% \bottomrule
+% \end{tabular}
+% \caption{Comparativa de la utilización de diferentes secuencias}
+% \label{tabla:ejemplo}
+% \end{table}
+
+
+% \begin{table}[h]
+% \centering
+% \captionsetup{justification=centering}
+% \begin{tabular}{cccccc}
+% \toprule
+% \textbf{Secuencia} & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095} & \textbf{Tipo de Prueba} \\
+% \midrule
+% T2W & 0.452 & 0.258 & 0.255 & 0.0858 & Sin Fine Tunning \\
+% ADC & 0.68 & 0.516 & 0.538 & 0.197 & Sin Fine Tunning \\
+% DWI & 0.671 & 0.498 & 0.49 & 0.171 & Sin Fine Tunning \\
+% T2W-ADC-DWI & 0.746 & 0.535 & 0.588 & 0.228 & Sin Fine Tunning \\
+% T2W & 0.394 & 0.282 & 0.215 & 0.0543 & Sin Fine Tunning (Cohorte de Prueba) \\
+% ADC & 0.745 & 0.436 & 0.479 & 0.184 & Sin Fine Tunning (Cohorte de Prueba) \\
+% DWI & 0.669 & 0.342 & 0.429 & 0.163 & Sin Fine Tunning (Cohorte de Prueba) \\
+% T2W-ADC-DWI & 0.74 & 0.496 & 0.566 & 0.251 & Sin Fine Tunning (Cohorte de Prueba) \\
+% \midrule
+% T2W & - & - & - & - & Fine Tunning (Básico) \\
+% ADC & 0.672 & 0.479 & 0.523 & 0.22 & Fine Tunning (Básico) \\
+% DWI & - & - & - & - & Fine Tunning (Básico) \\
+% T2W-ADC-DWI & - & - & - & - & Fine Tunning (Básico) \\
+% T2W & - & - & - & - & Fine Tunning (Básico, Cohorte de Prueba) \\
+% ADC & - & - & - & - & Fine Tunning (Básico, Cohorte de Prueba) \\
+% DWI & - & - & - & - & Fine Tunning (Básico, Cohorte de Prueba) \\
+% T2W-ADC-DWI & - & - & - & - & Fine Tunning (Básico, Cohorte de Prueba) \\
+% \bottomrule
+% \end{tabular}
+% \caption{Comparativa de la utilización de diferentes secuencias}
+% \label{tabla:ejemplo}
+% \end{table}
+
+
+
+% \begin{table}[h]
+% \centering
+% \captionsetup{justification=centering}
+% \begin{tabular}{cccccc}
+% \toprule
+% \textbf{Secuencia} & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095} & \textbf{Cohorte} \\
+% \midrule
+% T2W & 0.452 & 0.258 & 0.255 & 0.0858 & Validation \\
+% ADC & {0.68} & {0.516} & {0.538} & {0.197} & Validation \\
+% DWI & 0.671 & 0.498 & 0.49 & 0.171 & Validation \\
+% T2W-ADC-DWI & {0.746} & {0.535} & \textbf{0.588} & \textbf{0.228} & Validation \\
+% ADC-T2W-ADC & {0.445} & {0.433} & \textbf{0.46} & \textbf{0.24} & Validation \\
+% ADC-DWI-ADC & {0.759} & {0.464} & \textbf{0.568} & \textbf{0.23} & Validation \\
+% T2W-ADC-DWI-SEG+5 & {0.801}/0.814 & {0.563}/0.572 & \textbf{0.674}/0.696 & \textbf{0.333}/0.323 & Validation \\
+% T2W-ADC-DWI-SEG & {0.797}/0.798 & {0.509}/0.509 & \textbf{0.594}/0.598 & \textbf{0.256}/0.244 & Validation \\
+% \midrule
+% T2W & 0.394 & 0.282 & 0.215 & 0.0543 & Test \\
+% ADC & 0.745 & 0.436 & 0.479 & 0.184 & Test \\
+% DWI & 0.669 & 0.342 & 0.429 & 0.163 & Test \\
+% T2W-ADC-DWI & {0.74} & {0.496} & \textbf{0.566} & \textbf{0.251} & Test \\
+% ADC-T2W-ADC & {0.707} & {0.368} & \textbf{0.504} & \textbf{0.24} & Test \\
+% ADC-DWI-ADC & {0.75} & {0.393} & \textbf{0.553} & \textbf{0.247} & Test \\
+% T2W-ADC-DWI-SEG+5 & {0.809}/0.809 & {0.539}/0.539 & \textbf{0.658}/0.655 & \textbf{0.348}/0.333 & Test \\
+% T2W-ADC-DWI-SEG & {0.785}/0.799 & {0.458}/0.466 & \textbf{0.567}/0.575 & \textbf{0.29}/0.264 & Test \\
+
+% \midrule
+% T2W & - & - & - & - & Fine Tunning (Básico) \\
+% ADC & \textbf{0.672} & \textbf{0.479} & \textbf{0.523} & \textbf{0.22} & Fine Tunning (Básico) \\
+% DWI & - & - & - & - & Fine Tunning (Básico) \\
+% T2W-ADC-DWI & - & - & - & - & Fine Tunning (Básico) \\
+% T2W & - & - & - & - & Fine Tunning (Básico, Cohorte de Prueba) \\
+% ADC & - & - & - & - & Fine Tunning (Básico, Cohorte de Prueba) \\
+% DWI & - & - & - & - & Fine Tunning (Básico, Cohorte de Prueba) \\
+% T2W-ADC-DWI & - & - & - & - & Fine Tunning (Básico, Cohorte de Prueba) \\
+
+
+\begin{table}[h]
+\centering
+\captionsetup{justification=centering}
+\begin{tabular}{cccccc}
+\toprule
+\textbf{Secuencia} & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095}  \\
+\midrule
+T2W & 0.394 & 0.282 & 0.215 & 0.0543 \\
+ADC & 0.745 & 0.436 & 0.479 & 0.184 \\
+DWI & 0.669 & 0.342 & 0.429 & 0.163 \\
+T2W-ADC-DWI & {0.74} & {0.496} & \textbf{0.566} & \textbf{0.251} \\
+T2W-ADC-DWI-(150\_150) & {0.514} & {0.479} & \textbf{0.56} & \textbf{0.251} \\
+T2W-ADC-DWI-SEG-(150\_150) & {0.899} & {0.475} & \textbf{0.693} & \textbf{0.377} \\
+
+% ADC-T2W-ADC & {0.707} & {0.368} & \textbf{0.504} & \textbf{0.24}  \\
+% ADC-DWI-ADC & {0.75} & {0.393} & \textbf{0.553} & \textbf{0.247}  \\
+% T2W-ADC-DWI-(150\_150) & {0.514} & {0.479} & \textbf{0.56} & \textbf{0.251} \\
+% T2W-ADC-DWI-SEG+5 & {0.809}/0.809 & {0.539}/0.539 & \textbf{0.658}/0.655 & \textbf{0.348}/0.333 \\
+% T2W-ADC-DWI-SEG & {0.785}/0.799 & {0.458}/0.466 & \textbf{0.567}/0.575 & \textbf{0.29}/0.264 \\
+% T2W-ADC-DWI-SEG+5-(150\_150) & {0.899}/0.932 & {0.475}/0.492 & \textbf{0.693}/\textbf{0.705} & \textbf{0.377}/0.378 \\
+% T2W-ADC-DWI-SEG+5-(150\_150\_NW) & {0.73}/0.772 & {0.527}/0.5 & \textbf{0.578}/0.566 & \textbf{0.279}/0.26 \\
+
+
+
+\bottomrule
+\end{tabular}
+\caption{Comparativa de la utilización de diferentes secuencias}
+\label{tabla:ejemplo}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\captionsetup{justification=centering}
+\begin{tabular}{cccccc}
+\toprule
+\textbf{Threshold IOUV} & \textbf{Precisión} & \textbf{Recall} & \textbf{ApThreshold-0.95} & \textbf{ApThreshold-0.95}  \\
+\midrule
+0.1 & {0.673} & {0.627} & \textbf{0.727} & \textbf{0.523} \\
+0.2 & {0.673} & {0.627} & \textbf{0.727} & \textbf{0.503} \\
+0.3 & {0.902} & {0.5} & \textbf{0.722} & \textbf{0.468} \\
+0.4 & {0.664} & {0.619} & \textbf{0.721} & \textbf{0.433} \\
+0.5 & {0.899} & {0.475} & \textbf{0.693} & \textbf{0.377} \\
+0.6 & {0.851} & {0.449} & \textbf{0.63} & \textbf{0.3} \\
+0.7 & {0.692} & {0.364} & \textbf{0.497} & \textbf{0.204} \\
+0.8 & {0.453} & {0.186} & \textbf{0.233} & \textbf{0.0969} \\
+0.9 & {0} & {0} & \textbf{0} & \textbf{0} \\
+
+
+
+\bottomrule
+\end{tabular}
+\caption{T2W-ADC-DWI-SEG-(150\_150) por Thresholds IOUv}
+\label{tabla:ejemplo}
+\end{table}
+
+
+% \documentclass{article}
+% \usepackage{tabularx}
+% \usepackage{booktabs}
+% \usepackage{caption}
+
+% \begin{document}
+
+% \begin{table}[h]
+% \centering
+% \captionsetup{justification=centering}
+% \begin{tabularx}{\textwidth}{XXXXXX}
+% \toprule
+% \textbf{Secuencia} & \textbf{Precisión} & \textbf{Recall} & \textbf{Ap0.5} & \textbf{Ap .05-095} & \textbf{Tipo de Prueba} \\
+% \midrule
+% T2W & 0.452 & 0.258 & 0.255 & 0.0858 & Sin Fine Tunning \\
+% ADC & \textbf{0.68} & \textbf{0.516} & \textbf{0.538} & \textbf{0.197} & Sin Fine Tunning \\
+% DWI & 0.671 & 0.498 & 0.49 & 0.171 & Sin Fine Tunning \\
+% T2W-ADC-DWI & \textbf{0.746} & \textbf{0.535} & \textbf{0.588} & \textbf{0.228} & Sin Fine Tunning \\
+% ADC-T2W-ADC & \textbf{0.445} & \textbf{0.433} & \textbf{0.46} & \textbf{0.24} & Sin Fine Tunning \\
+% \midrule
+% T2W & 0.394 & 0.282 & 0.215 & 0.0543 & Sin Fine Tunning (Cohorte de Prueba) \\
+% ADC & \textbf{0.745} & 0.436 & 0.479 & 0.184 & Sin Fine Tunning (Cohorte de Prueba) \\
+% DWI & 0.669 & 0.342 & 0.429 & 0.163 & Sin Fine Tunning (Cohorte de Prueba) \\
+% T2W-ADC-DWI & \textbf{0.74} & \textbf{0.496} & \textbf{0.566} & \textbf{0.251} & Sin Fine Tunning (Cohorte de Prueba) \\
+% ADC-T2W-ADC & \textbf{0.707} & \textbf{0.368} & \textbf{0.504} & \textbf{0.24} & Sin Fine Tunning (Cohorte de Prueba) \\
+% \bottomrule
+% \end{tabularx}
+% \caption{Comparativa de la utilización de diferentes secuencias}
+% \label{tabla:ejemplo}
+% \end{table}
+
+% \end{document}
+
+
+
+% \section{Conjunto de datos}
+
+% Tres tipos de nanoespumas metálicas Cu-Ni fueron sintetizadas: $CuNi1$, $CuNi2$, $CuNi3$. Para esto se usaron tres diferentes soluciones acuosas con 1.5 M $H_{2}SO_{4}$ y diferentes concentraciones de $CuSO_{4} \cdot 5H_{2}O$ y  $NiSO_{4} \cdot 6H_{2}O$ para tener concentraciones de a) $0.3 M Cu^{2+}: 0.1 M Ni^{2+}$, b) $0.25 M Cu^{2+}: 0.15 M Ni^{2+}$ y c) $0.2 M Cu^{2+}: 0.2 M Ni^{2+}$. Estos tres tipos de nanoespumas fueron depositadas sobre un sustrato de cobre plano con un área de 1$cm^{2}$. Cada tipo de nanoespuma fue caracterizada usando un microscopio estereoscópico confocal con una magnificación de 700x. Finalmente, se capturaron un total de 600 imágenes de 1600 $\times$ 1200 pixeles constituyendo así un dataset balanceado con 200 imágenes por clase. Algunas muestras típicas de las imágenes microscópicas de nanoespumas capturadas se pueden ver en la figura \ref{fig:MNF_samples}.
+
+% \begin{figure}[H]
+%     \centering
+%     \caption{Imágenes microscópicas de espumas metálicas nanoporosas Cobre-Níquel típicas.}
+%     \label{fig:MNF_samples}
+%      \begin{subfigure}[b]{0.3\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{imgs/Setup/cuni1_full.jpg}
+%          \caption{Nanoespuma CuNi1}
+%          \label{fig:CuNi_1_full}
+%      \end{subfigure}
+%      \hfill
+%      \begin{subfigure}[b]{0.3\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]
+%          {imgs/Setup/cuni2_full.jpg}
+%          \caption{Nanoespuma CuNi2}
+%          \label{fig:CuNi_2_full}
+%      \end{subfigure}
+%      \hfill
+%      \begin{subfigure}[b]{0.3\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]
+%          {imgs/Setup/cuni3_full.jpg}
+%          \caption{Nanoespuma CuNi3}
+%          \label{fig:CuNi_3_full}
+%      \end{subfigure}        
+% \end{figure}
