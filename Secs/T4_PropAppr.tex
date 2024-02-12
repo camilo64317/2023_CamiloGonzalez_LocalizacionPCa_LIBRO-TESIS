@@ -33,11 +33,24 @@ En cuanto a las anotaciones de lesión csPCA, indicadas por radiología, se real
 
 % ---> 1 parrafo de resumen muy breve de la arquitectura o los metodologicos que su sigue su red desde la entrada hasta la prediccion ... "En la fgura XX esta el pielene..."
 
+
+La red propuesta para la localización de lesiones significativas de cáncer de próstata (csPCA) se basa en la arquitectura YOLOv5 y sigue una metodología de tres etapas: extracción de características, cuello y cabeza.
+
+En la etapa de extracción de características, se procesa la imagen de entrada para obtener mapas de características de alto nivel. Estos mapas son representaciones de la imagen original que capturan detalles como bordes, texturas y patrones. Estos detalles son cruciales para la identificación de lesiones csPCA. A medida que la imagen se reduce en tamaño, el número de canales de los mapas de características aumenta. Esto permite a la red aprender y representar diferentes granularidades de las lesiones, lo que ayuda en la generalización y en el manejo de la heterogeneidad inherente de las lesiones.
+
+La etapa del cuello implementa estrategias de PANET para realizar submuestreos estratégicos. Esto permite a la red trabajar con diferentes resoluciones y garantiza que los mapas de características tengan un buen valor semántico. Además, se utiliza el arquetipo SPPF (Spatial Pyramid Pooling Fusion), que mejora la funcionalidad del campo receptivo y permite una mayor fluidez en la red. El campo receptivo se refiere a la región en la imagen de entrada que una neurona particular puede “ver”. Al aumentar el campo receptivo, la red puede capturar detalles a diferentes escalas, lo que es crucial para la detección de lesiones de diferentes tamaños.
+
+Finalmente, en la etapa de la cabeza, la red genera las predicciones de localización, existencia y categoría de las lesiones csPCA a partir de los resultados de las etapas anteriores. Esto se realiza mediante capas completamente conectadas (fully connected), que también realizan cálculos para el ajuste correcto de las localizaciones de los cuadros delimitadores. Estas capas predicen la localización, la existencia y la categoría del objeto (en este caso, las lesiones csPCA).
+
+En la Figura (\ref{fig:pipeline}) se puede observar el pipeline completo de la red.
+
+
+
 \begin{figure}[h!]
 	\centering
 	\caption{Pipeline General para la localización de lesiones csPCA}
 	\includegraphics[width=1\textwidth]{imgs/pip_2.png}
-	\label{fig:axADC}
+	\label{fig:pipeline}
 \end{figure}
 
 \begin{figure}[h!]
