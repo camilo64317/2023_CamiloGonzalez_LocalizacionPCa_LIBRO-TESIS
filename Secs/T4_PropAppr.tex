@@ -64,13 +64,27 @@ En la Figura (\ref{fig:pipeline}) se puede observar el pipeline completo de la r
 
 % --> Estructura del backbone (incluyendo el upsample)... explicarlo [SPPSSS, y ettc los modulos que contenga..]
 
-La primera parte de la red,
+La primera parte de la red, está basada en el stándar CSP-NET, llamativo por implementar el formato de división y fusión entrelazada, que permite una mejor propagación de los gradientes a través de la red. La estructura de la red es modular, destacando los bloques CBF y los bloques convolucionales C3. Los bloques CBF actúan como catalizadores de los bloques C3, permitiéndoles extraer características encomiables.
+
+En este sentido se sigue una serie de etapas que incluyen cinco reducciones convolucionales y cuatro bloques C3. En la Figura \ref{fig:backbone_2.png}, se muestra la secuencia de módulos que componen el modelo.
+
+La primera capa convolucional toma la imagen de entrada y aplica 64 filtros de 6x6 con un stride de 2, reduciendo a la mitad la dimensión espacial de la imagen. La siguiente capa convolucional aplica 128 filtros de 3x3 con un stride de 2, disminuyendo nuevamente a la mitad la dimensión espacial de la imagen.
+
+A continuación, se introduce el módulo C3, que es un cuello de botella CSP con 3 capas convolucionales. Este módulo realiza una convolución en el tensor de entrada y concatena el resultado con el mismo tensor pasado a través de una convolución y una serie de capas de cuello de botella.
+
+Otra capa convolucional aplica 256 filtros de 3x3 con un stride de 2, reduciendo la dimensión espacial de la imagen a la mitad. Se introduce otro módulo C3, similar al anterior pero con 256 canales.
+
+Una capa convolucional que aplica 512 filtros de 3x3 con un stride de 2, reduce la dimensión espacial de la imagen a la mitad. Se introduce otro módulo C3, similar a los anteriores pero con 512 canales.
+
+Una capa convolucional que aplica 1024 filtros de 3x3 con un stride de 2, reduce la dimensión espacial de la imagen a la mitad. Se introduce otro módulo C3, similar a los anteriores pero con 1024 canales.
+
+Finalmente, se introduce el módulo SPPF (Spatial Pyramid Pooling Fusion), el cual es una versión optimizada de los comúnes módulos SPP que tiene igual funcionalidad matemática y menos operaciones de punto flotante (FLOPs). El propósito de SPPF es cohesionar una representación a múltiples escalas de los mapas de características primigenios.
 
 % ---> Figura para este bacbone
 \begin{figure}[h!]
 	\centering
 	\caption{Pipeline General para la localización de lesiones csPCA}
-	\includegraphics[width=1\textwidth]{imgs/backbone_1.png}
+	\includegraphics[width=1\textwidth]{imgs/backbone_2.png}
 	\label{fig:backbone}
 \end{figure}
 
