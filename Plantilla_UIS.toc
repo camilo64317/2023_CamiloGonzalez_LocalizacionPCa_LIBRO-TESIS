@@ -17,9 +17,9 @@
 \contentsline {section}{\numberline {4.2}Procesamiento de datos}{33}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Red de localización de lesiones significativas de cáncer de Próstata}{35}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Extracción de características}{36}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Predicción de regiones}{36}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Contorno de lesiones para la tarea de localización}{36}{section.4.6}%
-\contentsline {chapter}{\numberline {5}DISEÑO EXPERIMENTAL}{38}{chapter.5}%
-\contentsline {chapter}{\numberline {6}EVALUACIÓN Y RESULTADOS}{39}{chapter.6}%
-\contentsline {chapter}{\numberline {7}CONCLUSIONES Y TRABAJO FUTURO}{40}{chapter.7}%
+\contentsline {section}{\numberline {4.5}Predicción de regiones}{37}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Contorno de lesiones para la tarea de localización}{38}{section.4.6}%
+\contentsline {chapter}{\numberline {5}DISEÑO EXPERIMENTAL}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {6}EVALUACIÓN Y RESULTADOS}{40}{chapter.6}%
+\contentsline {chapter}{\numberline {7}CONCLUSIONES Y TRABAJO FUTURO}{41}{chapter.7}%
 \contentsfinish 

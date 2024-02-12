@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.29)  11 FEB 2024 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.29)  11 FEB 2024 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1218,7 +1218,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 [15
 
 ] [16]
-<imgs/T2WSUMUP.png, id=306, 1355.5443pt x 481.8pt>
+<imgs/T2WSUMUP.png, id=309, 1355.5443pt x 481.8pt>
 File: imgs/T2WSUMUP.png Graphic file (type png)
 <use imgs/T2WSUMUP.png>
 Package pdftex.def Info: imgs/T2WSUMUP.png  used on input line 33.
@@ -1269,7 +1269,7 @@ deleted material, e.g., by typing `I$}'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [17] [18 <./imgs/T2WSUMUP.png>]
-<imgs/DWISUMUP.png, id=332, 1355.5443pt x 481.8pt>
+<imgs/DWISUMUP.png, id=335, 1355.5443pt x 481.8pt>
 File: imgs/DWISUMUP.png Graphic file (type png)
 <use imgs/DWISUMUP.png>
 Package pdftex.def Info: imgs/DWISUMUP.png  used on input line 54.
@@ -1313,7 +1313,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<imgs/ADCSUMUP.png, id=335, 1355.5443pt x 481.8pt>
+<imgs/ADCSUMUP.png, id=338, 1355.5443pt x 481.8pt>
 File: imgs/ADCSUMUP.png Graphic file (type png)
 <use imgs/ADCSUMUP.png>
 Package pdftex.def Info: imgs/ADCSUMUP.png  used on input line 67.
@@ -1432,7 +1432,7 @@ a-ti-vas de cáncer de prós-tata (csPCA)
  []
 
 [34]
-<imgs/pip_3.png, id=497, 5377.08875pt x 3058.42625pt>
+<imgs/pip_3.png, id=500, 5377.08875pt x 3058.42625pt>
 File: imgs/pip_3.png Graphic file (type png)
 <use imgs/pip_3.png>
 Package pdftex.def Info: imgs/pip_3.png  used on input line 52.
@@ -1444,13 +1444,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35] [36 <./imgs/pip_3.png>]) (Secs/T5_ExpSetUp.tex [37]
+<imgs/backbone_1.png, id=501, 2546.51375pt x 1553.805pt>
+File: imgs/backbone_1.png Graphic file (type png)
+<use imgs/backbone_1.png>
+Package pdftex.def Info: imgs/backbone_1.png  used on input line 73.
+(pdftex.def)             Requested size: 486.25761pt x 296.69598pt.
+[35]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36 <./imgs/pip_3.png>] [37 <./imgs/backbone_1.png>]) (Secs/T5_ExpSetUp.tex
+[38]
 Chapter 5.
-) (Secs/T6_EvResults.tex [38
+) (Secs/T6_EvResults.tex [39
 
 ]
 Chapter 6.
-) (Secs/T7_Discuss.tex) (Secs/T8_ConFutW.tex [39
+) (Secs/T7_Discuss.tex) (Secs/T8_ConFutW.tex [40
 
 ]
 Chapter 7.
@@ -1458,7 +1471,7 @@ Chapter 7.
 
 LaTeX Warning: Empty bibliography on input line 110.
 
-(Secs/anexoA.tex) [40
+(Secs/anexoA.tex) [41
 
 ] (Plantilla_UIS.aux
 
@@ -1496,10 +1509,10 @@ Package logreq Info: Writing requests to 'Plantilla_UIS.run.xml'.
 ### semi simple group (level 1) entered at line 104 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24314 strings out of 476331
- 431285 string characters out of 5787765
+ 24325 strings out of 476331
+ 431499 string characters out of 5787765
  1865660 words of memory out of 5000000
- 44160 multiletter control sequences out of 15000+600000
+ 44167 multiletter control sequences out of 15000+600000
  554259 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,10n,90p,3157b,7472s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1859,9 +1872,9 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 fb><C:/Users/camil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8
 a.pfb><C:/Users/camil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uh
 vro8a.pfb>
-Output written on Plantilla_UIS.pdf (40 pages, 13458372 bytes).
+Output written on Plantilla_UIS.pdf (41 pages, 13777541 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

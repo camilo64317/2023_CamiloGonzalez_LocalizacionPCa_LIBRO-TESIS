@@ -42,13 +42,13 @@ La etapa del cuello implementa estrategias de PANET para realizar submuestreos e
 
 Finalmente, en la etapa de la cabeza, la red genera las predicciones de localización, existencia y categoría de las lesiones csPCA a partir de los resultados de las etapas anteriores. Esto se realiza mediante capas completamente conectadas (fully connected), que también realizan cálculos para el ajuste correcto de las localizaciones de los cuadros delimitadores. Estas capas predicen la localización, la existencia y la categoría del objeto (en este caso, las lesiones csPCA).
 
-En la Figura (\ref{fig:pipeline}) se puede observar el pipeline completo de la red.
+En la Figura (\ref{fig:pipeline}) se puede observar el pipeline completo de la red.\par
 
 
 
 \begin{figure}[h!]
 	\centering
-	\caption{Pipeline General para la localización de lesiones csPCA}
+	\caption{Estructura del backbone de la red de localización de csPCA}
 	\includegraphics[width=1\textwidth]{imgs/pip_3.png}
 	\label{fig:pipeline}
 \end{figure}
@@ -59,16 +59,30 @@ En la Figura (\ref{fig:pipeline}) se puede observar el pipeline completo de la r
 \end{figure}
 
 % --> Figura del pipeline general [no es tan imporante ser muy detallado con cada componente... porque cada una de ella va a tener su propiea figura... pero si algo ilustrativo por ejempo pequeñas imagenes de activaciones...]
-
+\par
 \section{Extracción de características}
 
 % --> Estructura del backbone (incluyendo el upsample)... explicarlo [SPPSSS, y ettc los modulos que contenga..]
 
-% ---> Figura para este bacbone
+La primera parte de la red,
 
+% ---> Figura para este bacbone
+\begin{figure}[h!]
+	\centering
+	\caption{Pipeline General para la localización de lesiones csPCA}
+	\includegraphics[width=1\textwidth]{imgs/backbone_1.png}
+	\label{fig:backbone}
+\end{figure}
+
+\begin{figure}[h!]
+	\noindent \textbf{Nota:} 
+	% Figura construida con el uso de datos bp-MRI de próstata de centros médicos de los Países Bajos \footnote{PICAI_BIAS}, y  procesadas con el software ITK-SNAP \footnote{ITKSNAP}.
+\end{figure}
 % ---> Figura con los mapas de saliencia 
 
+\par
 
+\newpage
 \section{Predicción de regiones}
 
 % --> Max supression...
@@ -79,7 +93,9 @@ En la Figura (\ref{fig:pipeline}) se puede observar el pipeline completo de la r
 
 % --> La loss ...
 
+\par
 
+\newpage
 \section{Contorno de lesiones para la tarea de localización}
 
 En el procesamiento de imágenes médicas, la identificación precisa de las regiones de interés (ROI) es un componente crítico para el rendimiento óptimo de los modelos de aprendizaje automático. Así pues, se implementó un enfoque alternativo para el tratamiento de las anotaciones de las regiones con lesiones csPCA. En lugar de expandir el cuadro que delimita la lesión del radiólogo un 30\% normalizado, este enfoque implica la identificación de los puntos del perímetro de la lesión csPCA marcada por el radiólogo. Estos puntos se dilatan morfológicamente 5 píxeles, asegurando así que toda la lesión esté incluida. Posteriormente, se normalizan en relación con el tamaño de la máscara de referencia. Este enfoque ofrece una representación detallada de la lesión, lo cual puede potenciar la capacidad del modelo para aprender características relevantes. En términos más detallados, los puntos del perímetro de la lesión se mapean en el formato [Presencia de lesión, coordenada\_X1, Coordenada\_Y1, …, coordenada\_Xn, Coordenada\_Yn]. Este formato de anotaciones proporciona una representación precisa de las áreas de interés csPCA, asegurando que se disponga de la información más relevante para su uso en modelos de localización.
