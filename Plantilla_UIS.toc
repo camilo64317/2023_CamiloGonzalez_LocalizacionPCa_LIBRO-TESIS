@@ -1,25 +1,25 @@
 ~\hfill \textbf {page}\par 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{INTRODUCCIÓN}{11}{chapter*.5}%
-\contentsline {chapter}{\numberline {1}FUNDAMENTOS Y TRABAJO PREVIO}{15}{chapter.1}%
-\contentsline {section}{\numberline {1.1}CÁNCER DE PRÓSTATA Y SECUENCIAS BP-MRI}{15}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Secuencia de imagen ponderada en T2 (T2WI). }{17}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Secuencia de imagen ponderada en difusión (DWI) y mapas ADC. }{18}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}ESTRATEGIAS COMPUTACIONALES DE LOCALIZACIÓN}{20}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Sistemas de ventana deslizante. }{20}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Sistemas de búsqueda selectiva. }{22}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Sistemas basados en una única observación. }{23}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}ANTECEDENTES LOCALIZACIÓN DE LESIONES CS-PCA}{25}{section.1.3}%
-\contentsline {chapter}{\numberline {2}PROBLEMA DE INVESTIGACIÓN}{30}{chapter.2}%
-\contentsline {chapter}{\numberline {3}OBJETIVOS}{31}{chapter.3}%
-\contentsline {chapter}{\numberline {4}MÉTODO PROPUESTO}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Conjunto de datos de lesiones de Próstata}{32}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Procesamiento de datos}{33}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Red de localización de lesiones significativas de cáncer de Próstata}{35}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Extracción de características}{36}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Predicción de regiones}{38}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Contorno de lesiones para la tarea de localización}{39}{section.4.6}%
-\contentsline {chapter}{\numberline {5}DISEÑO EXPERIMENTAL}{40}{chapter.5}%
-\contentsline {chapter}{\numberline {6}EVALUACIÓN Y RESULTADOS}{41}{chapter.6}%
-\contentsline {chapter}{\numberline {7}CONCLUSIONES Y TRABAJO FUTURO}{42}{chapter.7}%
+\contentsline {chapter}{\numberline {1}FUNDAMENTOS Y TRABAJO PREVIO}{14}{chapter.1}%
+\contentsline {section}{\numberline {1.1}CÁNCER DE PRÓSTATA Y SECUENCIAS BP-MRI}{14}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Secuencia de imagen ponderada en T2 (T2WI). }{15}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Secuencia de imagen ponderada en difusión (DWI) y mapas ADC. }{17}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}ESTRATEGIAS COMPUTACIONALES DE LOCALIZACIÓN}{19}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Sistemas de ventana deslizante. }{19}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Sistemas de búsqueda selectiva. }{20}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Sistemas basados en una única observación. }{21}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}ANTECEDENTES LOCALIZACIÓN DE LESIONES CS-PCA}{23}{section.1.3}%
+\contentsline {chapter}{\numberline {2}PROBLEMA DE INVESTIGACIÓN}{26}{chapter.2}%
+\contentsline {chapter}{\numberline {3}OBJETIVOS}{27}{chapter.3}%
+\contentsline {chapter}{\numberline {4}MÉTODO PROPUESTO}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Conjunto de datos de lesiones de Próstata}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Procesamiento de datos}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Red de localización de lesiones significativas de cáncer de Próstata}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Extracción de características}{32}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Predicción de regiones}{34}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Contorno de lesiones para la tarea de localización}{35}{section.4.6}%
+\contentsline {chapter}{\numberline {5}DISEÑO EXPERIMENTAL}{36}{chapter.5}%
+\contentsline {chapter}{\numberline {6}EVALUACIÓN Y RESULTADOS}{37}{chapter.6}%
+\contentsline {chapter}{\numberline {7}CONCLUSIONES Y TRABAJO FUTURO}{38}{chapter.7}%
 \contentsfinish 

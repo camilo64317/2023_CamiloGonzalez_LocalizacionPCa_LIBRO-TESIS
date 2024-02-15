@@ -1,14 +1,14 @@
 ~\hfill \textbf {page}\par 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Ilustración de lesiones en secuencias T2W.\relax }}{18}{figure.caption.6}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Ilustración de lesiones en secuencias DWI.\relax }}{19}{figure.caption.8}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Ilustración de lesiones en secuencias ADC.\relax }}{20}{figure.caption.10}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Ilustración de lesiones en secuencias T2W.\relax }}{16}{figure.caption.6}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Ilustración de lesiones en secuencias DWI.\relax }}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Ilustración de lesiones en secuencias ADC.\relax }}{18}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4}{\ignorespaces Estructura del backbone de la red de localización de csPCA\relax }}{36}{figure.caption.12}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Pipeline General para la localización de lesiones csPCA\relax }}{38}{figure.caption.14}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Estructura del backbone de la red de localización de csPCA\relax }}{32}{figure.caption.12}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Pipeline General para la localización de lesiones csPCA\relax }}{34}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

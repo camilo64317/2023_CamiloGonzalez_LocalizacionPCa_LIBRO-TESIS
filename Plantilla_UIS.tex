@@ -1,4 +1,4 @@
-    % ------------------------------------------------------------------------
+  % ------------------------------------------------------------------------
 %
 % -------------------      Plantilla_UIS.tex       -----------------------
 %
@@ -9,8 +9,7 @@
 % construida para uso de la Universidad Industrial de Santander.
 %
 % Reservados todos los derechos
-%\\
-
+%
 % Bucaramanga, Colombia
 %
 % Septiembre 17 de 2018
@@ -49,70 +48,72 @@
 \captionsetup[table]{name=Tabla}
 
 
-%\bibliographystyle{unsrt}
-%\bibliography{xbib}
+
+
+
 % ------------------------------------------------------------------------
 % Archivo de bibliografía
 % ------------------------------------------------------------------------
-\bibliography{xbib}
+\addbibresource{xbib.bib}
 \AtBeginBibliography{\renewcommand*{\mkbibnamefamily}[1]{\MakeUppercase{#1}}}
 % ------------------------------------------------------------------------
-\begin{document}                                     % Inicio de documento
-% ------------------------------------------------------------------------
-% Definición silábica de palabras
-
-\graphicspath{ {figures/} }
-% ------------------------------------------------------------------------
-\hyphenation{}
-% ------------------------------------------------------------------------
-% Elementos previos al contenido del trabajo
-% ------------------------------------------------------------------------
-\input{Secs/P0}   % Portada, contraportada, formato de nota y autorización
-
-\input{Secs/agradecimientos} 
-% ------------------------------------------------------------------------
-
-\tableofcontents
-
-
-\addto\captionsenglish{% Replace "english" with the language you use
-  \renewcommand{\tableofcontentsname}%
-    {Whatever}%
-}
-% Tabla de contenido
-
-% ------------------------------------------------------------------------
-
-\listoffigures                        % Lista de figuras, tablas y anexos
-\listoftables
-%\listofanexo
-% ------------------------------------------------------------------------
-% Contenido del Informe
-% ------------------------------------------------------------------------
-\include{Secs/abs}                                               % Resumen
-\include{Secs/res}                                              % Abstract
-% ------------------------------------------------------------------------
-% Capítulos
-% ------------------------------------------------------------------------
-\input{Secs/T0_intro} % Introducción
-\input{Secs/T1_FundPrevWork} % Parkinsonian oculomotor analysis
-\input{Secs/T2_ResProb} % Research Problem  
-\input{Secs/T3_obj} %Objectives
-\input{Secs/T4_PropAppr} 
-\input{Secs/T5_ExpSetUp}
-\input{Secs/T6_EvResults}
-\input{Secs/T7_Discuss} 
-\input{Secs/T8_ConFutW}
-
-% ------------------------------------------------------------------------
-% Bibliografía
-% ------------------------------------------------------------------------
-\printbibliography[heading=bibintoc,title={BIBLIOGRAFÍA},omitnumbers=true] 
-% ------------------------------------------------------------------------
-% Anexos
-% ------------------------------------------------------------------------
-\input{Secs/anexoA} % Artículos
-
-% ------------------------------------------------------------------------
+\begin{document}                                   % Inicio de documento
+	% ------------------------------------------------------------------------
+	% Definición silábica de palabras
+	
+	\graphicspath{ {figures/} }
+	% ------------------------------------------------------------------------
+	\hyphenation{}
+	% ------------------------------------------------------------------------
+	% Elementos previos al contenido del trabajo
+	% ------------------------------------------------------------------------
+	\input{Secs/P0}   % Portada, contraportada, formato de nota y autorización
+	
+	\input{Secs/agradecimientos} 
+	\newpage 
+	% ------------------------------------------------------------------------
+	
+	\tableofcontents
+	
+	
+	\addto\captionsenglish{% Replace "english" with the language you use
+		\renewcommand{\tableofcontentsname}%
+		{Whatever}%
+	}
+	% Tabla de contenido
+	
+	% ------------------------------------------------------------------------
+	
+	\listoffigures                        % Lista de figuras, tablas y anexos
+	\listoftables
+	%\listofanexo
+	% ------------------------------------------------------------------------
+	% Contenido del Informe
+	% ------------------------------------------------------------------------
+	\include{Secs/res}                                               % Resumen
+	\include{Secs/abs}                                              % Abstract
+	% ------------------------------------------------------------------------
+	% Capítulos
+	% ------------------------------------------------------------------------
+	\input{Secs/T0_intro} % Introducción
+	\input{Secs/T1_FundPrevWork} % Parkinsonian oculomotor analysis
+	\input{Secs/T2_ResProb} % Research Problem  
+	\input{Secs/T3_obj} %Objectives
+	\input{Secs/T4_PropAppr} 
+	\input{Secs/T5_ExpSetUp}
+	\input{Secs/T6_EvResults}
+	\input{Secs/T7_Discuss} 
+	\input{Secs/T8_ConFutW}
+	
+	% ------------------------------------------------------------------------
+	% Bibliografía
+	% ------------------------------------------------------------------------
+	\printbibliography[heading=bibintoc,title={BIBLIOGRAFÍA},omitnumbers=true] 
+	% ------------------------------------------------------------------------
+	% Anexos
+	% ------------------------------------------------------------------------
+	\input{Secs/anexoA} % Artículos
+	
+	% ------------------------------------------------------------------------
 \end{document}                                          % Fin de documento
-% ------------------------------------------------------------------------ 
+% ------------------------------------------------------------------------
